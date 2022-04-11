@@ -1,4 +1,4 @@
-// La interfas no es una herencia, es un estandar
+// La interfaz no es una herencia, es un estandar
 // que se debe cumplir porque previamente ya fue
 // definido
 // En las interfases no se pueden declarar
@@ -24,7 +24,7 @@ export interface Driver {
 //   port: 3200
 // }
 
-// Una interfaces se implementan con la palabra
+// Las interfaces se implementan con la palabra
 // reservada implements
 class PostgresDriver implements Driver {
   constructor(

@@ -2,7 +2,7 @@
 // método privado, pero tiene herencia. No
 // permite la modificación desde el exterior
 
-export class Animal {
+export abstract class Animal {
   constructor(protected name: string) {}
 
   move() {
