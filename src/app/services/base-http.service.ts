@@ -28,7 +28,7 @@ export class BaseHttpService<TypeClass> {
 
 (async () => {
   const url1 = 'https://api.escuelajs.co/api/v1/products';
-  const productService = new BaseService<Product>(url1);
+  const productService = new BaseHttpService<Product>(url1);
 
   const rta = await productService.getAll();
   console.log('Products', rta.length);
@@ -37,7 +37,7 @@ export class BaseHttpService<TypeClass> {
   });
 
   const url2 = 'https://api.escuelajs.co/api/v1/categories';
-  const categoryService = new BaseService<Category>(url2);
+  const categoryService = new BaseHttpService<Category>(url2);
 
   const rta1 = await categoryService.getAll();
   console.log('Categories', rta1.length);
