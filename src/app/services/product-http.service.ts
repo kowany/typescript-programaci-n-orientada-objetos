@@ -11,7 +11,7 @@ export class ProductHttpService implements ProductService {
   private url = 'https://api.escuelajs.co/api/v1/products';
 
   async getAll() {
-    const { data } = await axios.get<Product[]>('');
+    const { data } = await axios.get<Product[]>(this.url);
     return data;
   }
   async update(id: Product['id'], change: UpdateProductDto) {
